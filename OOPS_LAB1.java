@@ -1,3 +1,4 @@
+import java.util.Scanner;  
 
 class Car {
     String brand;
@@ -13,14 +14,21 @@ class Car {
 
 public class OOPS_LAB1 {
     public static void main(String[] args) {
-      
-        Car myCar = new Car();
+        Scanner sc = new Scanner(System.in);   
 
-       
-        myCar.brand = "Toyota";
-        myCar.model = "Camry";
-        myCar.year = 2022;
+        Car myCar = new Car(); 
+
+        System.out.print("Enter Car Brand: ");
+        myCar.brand = sc.nextLine();
+
+        System.out.print("Enter Car Model: ");
+        myCar.model = sc.nextLine();
+
+        System.out.print("Enter Car Year: ");
+        myCar.year = sc.nextInt();
 
         myCar.showDetails();
+
+        sc.close(); 
     }
 }

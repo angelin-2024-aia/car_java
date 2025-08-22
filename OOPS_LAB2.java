@@ -1,20 +1,26 @@
-class Sport {
-    void sportName() {
-        System.out.println("Sport: Cricket");
+
+class Car {
+    String brand;
+    String model;
+    int year;
+
+    void showDetails() {
+        System.out.println("Car Brand: " + brand);
+        System.out.println("Car Model: " + model);
+        System.out.println("Car Year: " + year);
     }
 }
 
-class Player extends Sport {
-    void playerInfo() {
-        System.out.println("Player: Virat Kohli");
-    }
-}
-
-public class OOPS_LAB2 {
+public class OOPS_LAB1 {
     public static void main(String[] args) {
-        System.out.println("---- Single Inheritance ----");
-        Player p = new Player();
-        p.sportName();
-        p.playerInfo(); //
+      
+        Car myCar = new Car();
+
+       
+        myCar.brand = "Toyota";
+        myCar.model = "Camry";
+        myCar.year = 2022;
+
+        myCar.showDetails();
     }
 }
