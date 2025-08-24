@@ -1,26 +1,36 @@
+import java.util.Scanner;
 
-class Car {
-    String brand;
-    String model;
-    int year;
+class Sport {
+    String sport;
 
-    void showDetails() {
-        System.out.println("Car Brand: " + brand);
-        System.out.println("Car Model: " + model);
-        System.out.println("Car Year: " + year);
+    void sportName(String sport) {
+        System.out.println("Sport: " + sport);
     }
 }
 
-public class OOPS_LAB1 {
+class Player extends Sport {
+    String player;
+
+    void playerInfo(String player) {
+        System.out.println("Player: " + player);
+    }
+}
+
+public class OOPS_LAB2 {   // ✅ must match file name OOPS_LAB2.java
     public static void main(String[] args) {
-      
-        Car myCar = new Car();
+        Scanner sc = new Scanner(System.in);
 
-       
-        myCar.brand = "Toyota";
-        myCar.model = "Camry";
-        myCar.year = 2022;
+        System.out.println("---- Single Inheritance ----");
+        System.out.print("Enter Sport Name: ");
+        String sport = sc.nextLine();
 
-        myCar.showDetails();
+        System.out.print("Enter Player Name: ");
+        String player = sc.nextLine();
+
+        Player p = new Player();
+        p.sportName(sport);
+        p.playerInfo(player);
+
+        sc.close();
     }
 }
