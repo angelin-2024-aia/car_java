@@ -16,7 +16,7 @@ class Player extends Sport {
     }
 }
 
-public class OOPS_LAB2 {   // ✅ must match file name OOPS_LAB2.java
+public class OOPS_LAB2 {   
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

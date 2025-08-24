@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Continent {
     String continent;
 
@@ -7,7 +6,6 @@ class Continent {
         System.out.println("Continent: " + continent);
     }
 }
-
 class Country extends Continent {
     String country;
 
@@ -15,7 +13,6 @@ class Country extends Continent {
         System.out.println("Country: " + country);
     }
 }
-
 class City extends Country {
     String city;
 
@@ -23,8 +20,7 @@ class City extends Country {
         System.out.println("City: " + city);
     }
 }
-
-public class OOPS_LAB2B {   // ✅ Same as file name
+public class OOPS_LAB2B {   
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
